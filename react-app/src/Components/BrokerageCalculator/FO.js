@@ -48,7 +48,7 @@ export default class FO extends React.Component {
         this.setState({
             turnover: turnover,
             stt: stt.toFixed(2),
-            exchange: exchange,
+            exchange: exchange.toFixed(2),
             gst: gst.toFixed(2),
             sebi: sebi.toFixed(2),
             stampduty: stampduty.toFixed(2),
@@ -101,7 +101,7 @@ export default class FO extends React.Component {
                     </tr>
                     <tr className="hide">
                         <th>Profit</th>
-                        <td>{(this.props.sell - this.props.buy) * this.props.qty}</td>
+                        <td>{this.state.pl.toFixed(2)}</td>
                     </tr>
                     <tr>
                         <th>Charges</th>
