@@ -39,7 +39,7 @@ export default class Calculator extends React.Component {
 
     render () {
         return (
-            <div class="container">
+            <div className="container">
 
                 <div className="charges-toggle">
                     <div className="btn-charges" onClick={() => this.toggleCharges()}>Charges</div>
@@ -64,11 +64,11 @@ export default class Calculator extends React.Component {
                     <div className="inputs row">
 
                         <div className="col">
-                            <label class="form-label">Buy</label>
+                            <label className="form-label">Buy</label>
                             <input type="number" step="0.05" placeholder="buy" id="buy" onChange={this.setBuy} onKeyUp={this.setBuy} defaultValue={this.state.buy} className="form-control"/>
                         </div>
                         <div className="col">
-                            <label class="form-label">Sell</label>
+                            <label className="form-label">Sell</label>
                             <input type="number" step="0.05" placeholder="sell" id="sel" onChange={this.setSell} onKeyUp={this.setSell} defaultValue={this.state.sell} className="form-control"/>
                         </div>
 
