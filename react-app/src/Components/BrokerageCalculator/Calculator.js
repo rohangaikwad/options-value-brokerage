@@ -21,7 +21,7 @@ export default class Calculator extends React.Component {
     setBuy = (evt) => {
         let buy = +evt.target.value;
         let sell = buy * 1.01;
-        this.setState({ buy: buy, sell: sell});        
+        this.setState({ buy: buy, sell: sell});
         document.getElementById('sel').value = sell;
     }
 
@@ -33,9 +33,18 @@ export default class Calculator extends React.Component {
         this.setState({ qty: +evt.target.value });
     }
 
+    toggleCharges = () => {
+        document.body.classList.toggle('show-charges');
+    }
+
     render () {
         return (
             <div class="container">
+
+                <div className="charges-toggle">
+                    <div className="btn-charges" onClick={() => this.toggleCharges()}>Charges</div>
+                </div>
+
                 <ul className="nav nav-tabs mt-4">
                     <li className="nav-item" onClick={() => this.setActiveCalculator('mis')}>
                         <div className={`nav-link ${this.state.active === "mis" ? 'active':''}`}>MIS</div>

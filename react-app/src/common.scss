@@ -6,7 +6,7 @@ body { font-family: calibri; }
 
     table {
         tr {
-            &.hide { display: none; }
+            body:not(.show-charges) &.hide { display: none; }
         }
         td {
             //padding: 0px 15px;
@@ -18,3 +18,11 @@ body { font-family: calibri; }
 }
 
 input[type="range"] { min-width: 300px; }
+
+.charges-toggle {
+    position: relative;
+    .btn-charges {
+        position: absolute; right: 0; top: 10px; color: #f1f1f1; cursor: pointer; text-transform: uppercase; font-size: 13px; user-select: none; font-weight: 500;
+        .show-charges & { color: black; }
+    }
+}
