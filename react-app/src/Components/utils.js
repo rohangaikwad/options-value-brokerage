@@ -1,0 +1,1 @@
+export const SERVICE_URL = window.location.hostname === "localhost" ? "http://localhost:3000" : "";

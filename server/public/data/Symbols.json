@@ -1,0 +1,737 @@
+{
+    "AARTIIND": {
+        "symbol": "AARTIIND",
+        "ucp": "1159.25",
+        "aav": "  0.4996"
+    },
+    "ACC": {
+        "symbol": "ACC",
+        "ucp": "1603.85",
+        "aav": "  0.3749"
+    },
+    "ADANIENT": {
+        "symbol": "ADANIENT",
+        "ucp": "506.65",
+        "aav": "  0.6139"
+    },
+    "ADANIPORTS": {
+        "symbol": "ADANIPORTS",
+        "ucp": "509.7",
+        "aav": "  0.4668"
+    },
+    "AMARAJABAT": {
+        "symbol": "AMARAJABAT",
+        "ucp": "918.35",
+        "aav": "  0.4404"
+    },
+    "AMBUJACEM": {
+        "symbol": "AMBUJACEM",
+        "ucp": "243.35",
+        "aav": "  0.4304"
+    },
+    "APOLLOHOSP": {
+        "symbol": "APOLLOHOSP",
+        "ucp": "2561.25",
+        "aav": "  0.5041"
+    },
+    "APOLLOTYRE": {
+        "symbol": "APOLLOTYRE",
+        "ucp": "196.65",
+        "aav": "  0.5579"
+    },
+    "ASHOKLEY": {
+        "symbol": "ASHOKLEY",
+        "ucp": "110.8",
+        "aav": "  0.6689"
+    },
+    "ASIANPAINT": {
+        "symbol": "ASIANPAINT",
+        "ucp": "2407.35",
+        "aav": "  0.3825"
+    },
+    "AUROPHARMA": {
+        "symbol": "AUROPHARMA",
+        "ucp": "905.25",
+        "aav": "  0.6000"
+    },
+    "AXISBANK": {
+        "symbol": "AXISBANK",
+        "ucp": "662.9",
+        "aav": "  0.6388"
+    },
+    "BAJAJ-AUTO": {
+        "symbol": "BAJAJ-AUTO",
+        "ucp": "4005.8",
+        "aav": "  0.4095"
+    },
+    "BAJAJFINSV": {
+        "symbol": "BAJAJFINSV",
+        "ucp": "8722.7",
+        "aav": "  0.5754"
+    },
+    "BAJFINANCE": {
+        "symbol": "BAJFINANCE",
+        "ucp": "4734.6",
+        "aav": "  0.6241"
+    },
+    "BALKRISIND": {
+        "symbol": "BALKRISIND",
+        "ucp": "1588.4",
+        "aav": "  0.4968"
+    },
+    "BANDHANBNK": {
+        "symbol": "BANDHANBNK",
+        "ucp": "309.45",
+        "aav": "  0.7881"
+    },
+    "BANKBARODA": {
+        "symbol": "BANKBARODA",
+        "ucp": "68.05",
+        "aav": "  0.6158"
+    },
+    "BANKEX": {
+        "symbol": "BANKEX",
+        "ucp": "34662.51",
+        "aav": "  0.4550"
+    },
+    "BANKNIFTY": {
+        "symbol": "BANKNIFTY",
+        "ucp": "30565.5",
+        "aav": "  0.4085"
+    },
+    "BATAINDIA": {
+        "symbol": "BATAINDIA",
+        "ucp": "1501.3",
+        "aav": "  0.4268"
+    },
+    "BEL": {
+        "symbol": "BEL",
+        "ucp": "130.05",
+        "aav": "  0.5413"
+    },
+    "BERGEPAINT": {
+        "symbol": "BERGEPAINT",
+        "ucp": "706.85",
+        "aav": "  0.3894"
+    },
+    "BHARATFORG": {
+        "symbol": "BHARATFORG",
+        "ucp": "583.8",
+        "aav": "  0.5897"
+    },
+    "BHARTIARTL": {
+        "symbol": "BHARTIARTL",
+        "ucp": "553.6",
+        "aav": "  0.4622"
+    },
+    "BHEL": {
+        "symbol": "BHEL",
+        "ucp": "36.05",
+        "aav": "  0.6444"
+    },
+    "BIOCON": {
+        "symbol": "BIOCON",
+        "ucp": "371.8",
+        "aav": "  0.6048"
+    },
+    "BOSCHLTD": {
+        "symbol": "BOSCHLTD",
+        "ucp": "15328.35",
+        "aav": "  0.4787"
+    },
+    "BPCL": {
+        "symbol": "BPCL",
+        "ucp": "383.6",
+        "aav": "  0.5339"
+    },
+    "BRITANNIA": {
+        "symbol": "BRITANNIA",
+        "ucp": "3501.15",
+        "aav": "  0.4003"
+    },
+    "CADILAHC": {
+        "symbol": "CADILAHC",
+        "ucp": "451.5",
+        "aav": "  0.4246"
+    },
+    "CANBK": {
+        "symbol": "CANBK",
+        "ucp": "132",
+        "aav": "  0.6409"
+    },
+    "CHOLAFIN": {
+        "symbol": "CHOLAFIN",
+        "ucp": "397.85",
+        "aav": "  0.7366"
+    },
+    "CIPLA": {
+        "symbol": "CIPLA",
+        "ucp": "825.9",
+        "aav": "  0.4113"
+    },
+    "COALINDIA": {
+        "symbol": "COALINDIA",
+        "ucp": "125.9",
+        "aav": "  0.4052"
+    },
+    "COFORGE": {
+        "symbol": "COFORGE",
+        "ucp": "2392.9",
+        "aav": "  0.6336"
+    },
+    "COLPAL": {
+        "symbol": "COLPAL",
+        "ucp": "1603.3",
+        "aav": "  0.3596"
+    },
+    "CONCOR": {
+        "symbol": "CONCOR",
+        "ucp": "433.5",
+        "aav": "  0.4833"
+    },
+    "CUMMINSIND": {
+        "symbol": "CUMMINSIND",
+        "ucp": "666.35",
+        "aav": "  0.4187"
+    },
+    "DABUR": {
+        "symbol": "DABUR",
+        "ucp": "514.55",
+        "aav": "  0.2953"
+    },
+    "DIVISLAB": {
+        "symbol": "DIVISLAB",
+        "ucp": "3369.85",
+        "aav": "  0.4020"
+    },
+    "DLF": {
+        "symbol": "DLF",
+        "ucp": "255.45",
+        "aav": "  0.6217"
+    },
+    "DRREDDY": {
+        "symbol": "DRREDDY",
+        "ucp": "4602.6",
+        "aav": "  0.3650"
+    },
+    "EICHERMOT": {
+        "symbol": "EICHERMOT",
+        "ucp": "2744.3",
+        "aav": "  0.4853"
+    },
+    "ESCORTS": {
+        "symbol": "ESCORTS",
+        "ucp": "1205.7",
+        "aav": "  0.5654"
+    },
+    "EXIDEIND": {
+        "symbol": "EXIDEIND",
+        "ucp": "193.5",
+        "aav": "  0.3918"
+    },
+    "FEDERALBNK": {
+        "symbol": "FEDERALBNK",
+        "ucp": "72.3",
+        "aav": "  0.6155"
+    },
+    "FINNIFTY": {
+        "symbol": "FINNIFTY",
+        "ucp": "14593.3",
+        "aav": "  0.3860"
+    },
+    "GAIL": {
+        "symbol": "GAIL",
+        "ucp": "125.3",
+        "aav": "  0.4867"
+    },
+    "GLENMARK": {
+        "symbol": "GLENMARK",
+        "ucp": "471.6",
+        "aav": "  0.5629"
+    },
+    "GMRINFRA": {
+        "symbol": "GMRINFRA",
+        "ucp": "23.85",
+        "aav": "  0.5280"
+    },
+    "GODREJCP": {
+        "symbol": "GODREJCP",
+        "ucp": "744.65",
+        "aav": "  0.3847"
+    },
+    "GODREJPROP": {
+        "symbol": "GODREJPROP",
+        "ucp": "1256.9",
+        "aav": "  0.6013"
+    },
+    "GRASIM": {
+        "symbol": "GRASIM",
+        "ucp": "1055.65",
+        "aav": "  0.4746"
+    },
+    "HAVELLS": {
+        "symbol": "HAVELLS",
+        "ucp": "1044.75",
+        "aav": "  0.4629"
+    },
+    "HCLTECH": {
+        "symbol": "HCLTECH",
+        "ucp": "914",
+        "aav": "  0.4378"
+    },
+    "HDFC": {
+        "symbol": "HDFC",
+        "ucp": "2377.8",
+        "aav": "  0.4710"
+    },
+    "HDFCAMC": {
+        "symbol": "HDFCAMC",
+        "ucp": "2876.65",
+        "aav": "  0.4557"
+    },
+    "HDFCBANK": {
+        "symbol": "HDFCBANK",
+        "ucp": "1390.5",
+        "aav": "  0.3838"
+    },
+    "HDFCLIFE": {
+        "symbol": "HDFCLIFE",
+        "ucp": "677.95",
+        "aav": "  0.4792"
+    },
+    "HEROMOTOCO": {
+        "symbol": "HEROMOTOCO",
+        "ucp": "3256",
+        "aav": "  0.4593"
+    },
+    "HINDALCO": {
+        "symbol": "HINDALCO",
+        "ucp": "226.3",
+        "aav": "  0.5996"
+    },
+    "HINDPETRO": {
+        "symbol": "HINDPETRO",
+        "ucp": "218.6",
+        "aav": "  0.5378"
+    },
+    "HINDUNILVR": {
+        "symbol": "HINDUNILVR",
+        "ucp": "2263.9",
+        "aav": "  0.3423"
+    },
+    "IBULHSGFIN": {
+        "symbol": "IBULHSGFIN",
+        "ucp": "190.85",
+        "aav": "  0.9978"
+    },
+    "ICICIBANK": {
+        "symbol": "ICICIBANK",
+        "ucp": "537",
+        "aav": "  0.5443"
+    },
+    "ICICIGI": {
+        "symbol": "ICICIGI",
+        "ucp": "1315.6",
+        "aav": "  0.4832"
+    },
+    "ICICIPRULI": {
+        "symbol": "ICICIPRULI",
+        "ucp": "481",
+        "aav": "  0.5741"
+    },
+    "IDEA": {
+        "symbol": "IDEA",
+        "ucp": "11.21",
+        "aav": "  1.2025"
+    },
+    "IDFCFIRSTB": {
+        "symbol": "IDFCFIRSTB",
+        "ucp": "47.2",
+        "aav": "  0.6135"
+    },
+    "IGL": {
+        "symbol": "IGL",
+        "ucp": "515.8",
+        "aav": "  0.4579"
+    },
+    "INDIGO": {
+        "symbol": "INDIGO",
+        "ucp": "1547.7",
+        "aav": "  0.5358"
+    },
+    "INDUSINDBK": {
+        "symbol": "INDUSINDBK",
+        "ucp": "846.1",
+        "aav": "  0.8258"
+    },
+    "INDUSTOWER": {
+        "symbol": "INDUSTOWER",
+        "ucp": "231.5",
+        "aav": "  0.6817"
+    },
+    "INFY": {
+        "symbol": "INFY",
+        "ucp": "1239.05",
+        "aav": "  0.4187"
+    },
+    "IOC": {
+        "symbol": "IOC",
+        "ucp": "93.25",
+        "aav": "  0.4001"
+    },
+    "ITC": {
+        "symbol": "ITC",
+        "ucp": "203.25",
+        "aav": "  0.3783"
+    },
+    "JINDALSTEL": {
+        "symbol": "JINDALSTEL",
+        "ucp": "261.75",
+        "aav": "  0.7534"
+    },
+    "JSWSTEEL": {
+        "symbol": "JSWSTEEL",
+        "ucp": "366.95",
+        "aav": "  0.5269"
+    },
+    "JUBLFOOD": {
+        "symbol": "JUBLFOOD",
+        "ucp": "2590.2",
+        "aav": "  0.4861"
+    },
+    "KOTAKBANK": {
+        "symbol": "KOTAKBANK",
+        "ucp": "1712.95",
+        "aav": "  0.4773"
+    },
+    "L&TFH": {
+        "symbol": "L&TFH",
+        "ucp": "86",
+        "aav": "  0.6572"
+    },
+    "LALPATHLAB": {
+        "symbol": "LALPATHLAB",
+        "ucp": "2247.5",
+        "aav": "  0.4698"
+    },
+    "LICHSGFIN": {
+        "symbol": "LICHSGFIN",
+        "ucp": "395.7",
+        "aav": "  0.5811"
+    },
+    "LT": {
+        "symbol": "LT",
+        "ucp": "1334.7",
+        "aav": "  0.4083"
+    },
+    "LUPIN": {
+        "symbol": "LUPIN",
+        "ucp": "1007.6",
+        "aav": "  0.4428"
+    },
+    "M&M": {
+        "symbol": "M&M",
+        "ucp": "749.6",
+        "aav": "  0.4822"
+    },
+    "M&MFIN": {
+        "symbol": "M&MFIN",
+        "ucp": "154.75",
+        "aav": "  0.7150"
+    },
+    "MANAPPURAM": {
+        "symbol": "MANAPPURAM",
+        "ucp": "156.1",
+        "aav": "  0.6400"
+    },
+    "MARICO": {
+        "symbol": "MARICO",
+        "ucp": "415.6",
+        "aav": "  0.2959"
+    },
+    "MARUTI": {
+        "symbol": "MARUTI",
+        "ucp": "7206.7",
+        "aav": "  0.4642"
+    },
+    "MCDOWELL-N": {
+        "symbol": "MCDOWELL-N",
+        "ucp": "578.7",
+        "aav": "  0.4312"
+    },
+    "MFSL": {
+        "symbol": "MFSL",
+        "ucp": "683",
+        "aav": "  0.6418"
+    },
+    "MGL": {
+        "symbol": "MGL",
+        "ucp": "1035.15",
+        "aav": "  0.4592"
+    },
+    "MINDTREE": {
+        "symbol": "MINDTREE",
+        "ucp": "1645.1",
+        "aav": "  0.5553"
+    },
+    "MOTHERSUMI": {
+        "symbol": "MOTHERSUMI",
+        "ucp": "144.95",
+        "aav": "  0.6843"
+    },
+    "MRF": {
+        "symbol": "MRF",
+        "ucp": "84084.75",
+        "aav": "  0.3848"
+    },
+    "MUTHOOTFIN": {
+        "symbol": "MUTHOOTFIN",
+        "ucp": "1105.85",
+        "aav": "  0.5565"
+    },
+    "NATIONALUM": {
+        "symbol": "NATIONALUM",
+        "ucp": "47.9",
+        "aav": "  0.5338"
+    },
+    "NAUKRI": {
+        "symbol": "NAUKRI",
+        "ucp": "4364.05",
+        "aav": "  0.5626"
+    },
+    "NESTLEIND": {
+        "symbol": "NESTLEIND",
+        "ucp": "17060.1",
+        "aav": "  0.3624"
+    },
+    "NIFTY": {
+        "symbol": "NIFTY",
+        "ucp": "13634.6",
+        "aav": "  0.2875"
+    },
+    "NMDC": {
+        "symbol": "NMDC",
+        "ucp": "105.2",
+        "aav": "  0.5458"
+    },
+    "NTPC": {
+        "symbol": "NTPC",
+        "ucp": "88.95",
+        "aav": "  0.3866"
+    },
+    "ONGC": {
+        "symbol": "ONGC",
+        "ucp": "88.3",
+        "aav": "  0.5371"
+    },
+    "PAGEIND": {
+        "symbol": "PAGEIND",
+        "ucp": "27176.35",
+        "aav": "  0.4537"
+    },
+    "PEL": {
+        "symbol": "PEL",
+        "ucp": "1311.45",
+        "aav": "  0.6547"
+    },
+    "PETRONET": {
+        "symbol": "PETRONET",
+        "ucp": "237",
+        "aav": "  0.4240"
+    },
+    "PFC": {
+        "symbol": "PFC",
+        "ucp": "109.8",
+        "aav": "  0.5014"
+    },
+    "PIDILITIND": {
+        "symbol": "PIDILITIND",
+        "ucp": "1670.2",
+        "aav": "  0.3764"
+    },
+    "PNB": {
+        "symbol": "PNB",
+        "ucp": "33.35",
+        "aav": "  0.5802"
+    },
+    "POWERGRID": {
+        "symbol": "POWERGRID",
+        "ucp": "184.45",
+        "aav": "  0.3557"
+    },
+    "PVR": {
+        "symbol": "PVR",
+        "ucp": "1418.5",
+        "aav": "  0.6100"
+    },
+    "RAMCOCEM": {
+        "symbol": "RAMCOCEM",
+        "ucp": "781",
+        "aav": "  0.4039"
+    },
+    "RBLBANK": {
+        "symbol": "RBLBANK",
+        "ucp": "213.8",
+        "aav": "  0.7731"
+    },
+    "RECLTD": {
+        "symbol": "RECLTD",
+        "ucp": "132.5",
+        "aav": "  0.4866"
+    },
+    "RELIANCE": {
+        "symbol": "RELIANCE",
+        "ucp": "1842",
+        "aav": "  0.4632"
+    },
+    "SAIL": {
+        "symbol": "SAIL",
+        "ucp": "57.65",
+        "aav": "  0.6695"
+    },
+    "SBILIFE": {
+        "symbol": "SBILIFE",
+        "ucp": "864.45",
+        "aav": "  0.4360"
+    },
+    "SBIN": {
+        "symbol": "SBIN",
+        "ucp": "282.1",
+        "aav": "  0.5070"
+    },
+    "SENSEX": {
+        "symbol": "SENSEX",
+        "ucp": "46285.77",
+        "aav": "  0.2894"
+    },
+    "SENSEX50": {
+        "symbol": "SENSEX50",
+        "ucp": "14287.7",
+        "aav": "  0.2849"
+    },
+    "SHREECEM": {
+        "symbol": "SHREECEM",
+        "ucp": "22772.8",
+        "aav": "  0.4076"
+    },
+    "SIEMENS": {
+        "symbol": "SIEMENS",
+        "ucp": "1586.45",
+        "aav": "  0.3884"
+    },
+    "SRF": {
+        "symbol": "SRF",
+        "ucp": "5370",
+        "aav": "  0.4861"
+    },
+    "SRTRANSFIN": {
+        "symbol": "SRTRANSFIN",
+        "ucp": "1291.35",
+        "aav": "  0.7663"
+    },
+    "SUNPHARMA": {
+        "symbol": "SUNPHARMA",
+        "ucp": "586.2",
+        "aav": "  0.4260"
+    },
+    "SUNTV": {
+        "symbol": "SUNTV",
+        "ucp": "477.75",
+        "aav": "  0.5031"
+    },
+    "SX40": {
+        "symbol": "SX40",
+        "ucp": "26995.51",
+        "aav": "  0.2837"
+    },
+    "TATACHEM": {
+        "symbol": "TATACHEM",
+        "ucp": "475.3",
+        "aav": "  0.4458"
+    },
+    "TATACONSUM": {
+        "symbol": "TATACONSUM",
+        "ucp": "559.8",
+        "aav": "  0.4934"
+    },
+    "TATAMOTORS": {
+        "symbol": "TATAMOTORS",
+        "ucp": "262.7",
+        "aav": "  0.6895"
+    },
+    "TATAPOWER": {
+        "symbol": "TATAPOWER",
+        "ucp": "75.4",
+        "aav": "  0.5153"
+    },
+    "TATASTEEL": {
+        "symbol": "TATASTEEL",
+        "ucp": "601",
+        "aav": "  0.5365"
+    },
+    "TCS": {
+        "symbol": "TCS",
+        "ucp": "3111.35",
+        "aav": "  0.3691"
+    },
+    "TECHM": {
+        "symbol": "TECHM",
+        "ucp": "961.4",
+        "aav": "  0.4411"
+    },
+    "TITAN": {
+        "symbol": "TITAN",
+        "ucp": "1420.3",
+        "aav": "  0.4386"
+    },
+    "TORNTPHARM": {
+        "symbol": "TORNTPHARM",
+        "ucp": "2608.05",
+        "aav": "  0.4227"
+    },
+    "TORNTPOWER": {
+        "symbol": "TORNTPOWER",
+        "ucp": "308.8",
+        "aav": "  0.3794"
+    },
+    "TVSMOTOR": {
+        "symbol": "TVSMOTOR",
+        "ucp": "560.7",
+        "aav": "  0.4606"
+    },
+    "UBL": {
+        "symbol": "UBL",
+        "ucp": "1299.65",
+        "aav": "  0.4184"
+    },
+    "ULTRACEMCO": {
+        "symbol": "ULTRACEMCO",
+        "ucp": "5327.2",
+        "aav": "  0.4099"
+    },
+    "UPL": {
+        "symbol": "UPL",
+        "ucp": "560.6",
+        "aav": "  0.5686"
+    },
+    "VEDL": {
+        "symbol": "VEDL",
+        "ucp": "161.25",
+        "aav": "  0.6480"
+    },
+    "VOLTAS": {
+        "symbol": "VOLTAS",
+        "ucp": "908.1",
+        "aav": "  0.4204"
+    },
+    "WIPRO": {
+        "symbol": "WIPRO",
+        "ucp": "417.9",
+        "aav": "  0.4298"
+    },
+    "ZEEL": {
+        "symbol": "ZEEL",
+        "ucp": "220",
+        "aav": "  0.7458"
+    }
+}
