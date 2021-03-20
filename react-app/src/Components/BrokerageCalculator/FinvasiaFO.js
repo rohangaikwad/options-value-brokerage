@@ -16,7 +16,8 @@ export default class FinvasiaFO extends React.Component {
             totaltax: 0,
             breakeven: 0,
             pl: 0,
-            netpl: 0
+            netpl: 0,
+            magicNumber: (x) => {}
         }
     }
 
@@ -25,8 +26,8 @@ export default class FinvasiaFO extends React.Component {
     }
 
     componentDidUpdate(prevProps) {
-        let { buy, sell, qty } = this.props;
-        if (buy !== prevProps.buy || sell !== prevProps.sell || qty !== prevProps.qty) {
+        let { buy, sell, qty, bal } = this.props;
+        if (buy !== prevProps.buy || sell !== prevProps.sell || qty !== prevProps.qty || bal !== prevProps.bal) {
             this.calculate();
         }
     }
@@ -56,6 +57,60 @@ export default class FinvasiaFO extends React.Component {
             breakeven: breakeven,
             pl: pl,
             netpl: netpl
+        }, () => {
+            this.calcStopLoss();
+        })
+
+
+    }
+
+    calcStopLoss = () => {
+
+        /*
+        let turnover = (b + s) * q;
+        = bq + sq
+
+        let stt = s * q * 0.0005;
+        = 0.0005sq;
+
+        let exchange = 0.00053 * ((b + s) * q);
+        = 0.00053 * (bq + sq);
+        = 0.00053bq + 0.00053sq;
+
+        let gst = 0.18 * (0.00053 * ((b + s) * q));
+        = 0.0000954bq + 0.0000954sq
+
+        let sebi = ((b + s) * q) * 0.0000005;
+        = (bq + sq) * 0.0000005
+        = 0.0000005bq + 0.0000005sq
+
+        let stampduty = b * q * 0.00003;
+        = 0.00003bq
+
+
+        p = ((s - b) * q) - (stt + exchange + gst + sebi + stampduty)
+        p = (sq - bq) - (stt + exchange + gst + sebi + stampduty)
+        p = (sq - bq) - (0.0005sq + 0.00053bq + 0.00053sq + 0.0000954bq + 0.0000954sq + 0.0000005bq + 0.0000005sq + 0.00003bq)
+        p = (sq - bq) - (0.0005sq + 0.00053sq + 0.0000954sq + 0.0000005sq + 0.00053bq + 0.0000954bq + 0.0000005bq + 0.00003bq)
+        p = sq - bq - (0.0011259sq + 0.0006559bq)
+        p = sq - bq - 0.0011259sq + 0.0006559bq
+        p = sq - 0.0011259sq - bq + 0.0006559bq
+        p = 0.9988741sq - 1.0006559bq
+        p = q(0.9988741s - 1.0006559b)
+        p/q = 0.9988741s - 1.0006559b
+        p/q + 1.0006559b = 0.9988741s;
+        (p + 1.0006559bq)/0.9988741q = s;
+        s = (p + 1.0006559bq)/0.9988741q;
+        */
+
+        //let target = this.props.bal * -0.01;
+        //let magicNumber = ((target + (1.0006559 * this.props.buy * this.props.qty)) / (0.9988741 * this.props.qty)) - this.props.buy;
+        this.setState({
+            magicNumber: (target) => {
+                let simple = this.props.buy + (this.props.buy/100 * target * 2);
+                let adv = ((this.props.bal * target/100) + (1.0006559 * this.props.buy * this.props.qty)) / (0.9988741 * this.props.qty);
+                return `${simple.toFixed(2)} | ${adv.toFixed(2)}`;
+            }
         })
     }
 
@@ -65,8 +120,24 @@ export default class FinvasiaFO extends React.Component {
                 <table className="table table-bordered table-success table-striped">
                     <tbody>
                         <tr>
+                            <th>Stoploss (-1%)</th>
+                            <td className="text-danger">{this.state.magicNumber(-1)}</td>
+                        </tr>
+                        <tr>
                             <th>Breakeven</th>
-                            <td>{(this.state.breakeven + this.props.buy).toFixed(2)}</td>
+                            <td className="text-decoration-underline text-muted">{(this.state.breakeven + this.props.buy).toFixed(2)}</td>
+                        </tr>
+                        <tr>
+                            <th>Profit (1:1)</th>
+                            <td><strong>{this.state.magicNumber(1)}</strong></td>
+                        </tr>
+                        <tr>
+                            <th>Profit (1:2)</th>
+                            <td>{this.state.magicNumber(2)}</td>
+                        </tr>
+                        <tr>
+                            <th>Profit (1:3)</th>
+                            <td>{this.state.magicNumber(3)}</td>
                         </tr>
                         <tr className="hide">
                             <th>Turnover</th>
@@ -104,7 +175,7 @@ export default class FinvasiaFO extends React.Component {
                             <th>Profit</th>
                             <td>{this.state.pl.toFixed(2)}</td>
                         </tr>
-                        <tr>
+                        <tr className="hide">
                             <th>Charges</th>
                             <td>{this.state.totaltax}</td>
                         </tr>

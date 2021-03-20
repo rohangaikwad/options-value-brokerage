@@ -10,10 +10,9 @@ export default class Calculator extends React.Component {
     constructor (props) {
         super(props);
         this.state = {
-            buy: 25, sell: 25.25, qty: 225, active: "o"
+            buy: 25, sell: 25.25, qty: 225, active: "o", bal: 10000
         }
     }
-
     setActiveCalculator = (name) => {
         this.setState({active: name})
     }
@@ -21,7 +20,7 @@ export default class Calculator extends React.Component {
     setBuy = (evt) => {
         let buy = +evt.target.value;
         let sell = buy * 1.01;
-        this.setState({ buy: buy, sell: sell});
+        this.setState({ buy: buy, sell: sell });
         document.getElementById('sel').value = sell;
     }
 
@@ -33,6 +32,10 @@ export default class Calculator extends React.Component {
         this.setState({ qty: +evt.target.value });
     }
 
+    setBalance = (evt) => {
+        this.setState({ bal: +evt.target.value });
+    }
+
     toggleCharges = () => {
         document.body.classList.toggle('show-charges');
     }
@@ -40,6 +43,10 @@ export default class Calculator extends React.Component {
     render () {
         return (
             <div className="container">
+
+                <div className="balance">
+                    <input type="number" defaultValue={this.state.bal}  onChange={this.setBalance} onKeyUp={this.setBalance}/>
+                </div>
 
                 <div className="charges-toggle">
                     <div className="btn-charges" onClick={() => this.toggleCharges()}>Charges</div>
@@ -73,16 +80,16 @@ export default class Calculator extends React.Component {
                         </div>
 
                         <div className="col-12 mt-3">
-                            <span className="d-flex justify-content-between">Qty: {this.state.qty} <span>{this.state.buy} * {this.state.qty} = <b>₹{this.state.buy * this.state.qty}</b></span></span>
+                            <span className="d-flex justify-content-between">Qty: {this.state.qty} <span>{this.state.buy} * {this.state.qty.toFixed(2)} = <b>₹{(this.state.buy * this.state.qty).toFixed(2)}</b></span></span>
                             <input type="range" defaultValue={this.state.qty} step="25" min="25" max="2500" placeholder="qty" id="qty" onChange={this.setQty} onKeyUp={this.setQty} className="form-range"/>
                         </div>
                     </div>
 
                     <div className="calculations mt-3">
-                        {this.state.active === 'mis' && <MIS buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} />}
-                        {this.state.active === 'cnc' && <CNC buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} />}
-                        {this.state.active === 'o'  && <FO buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} />}
-                        {this.state.active === 'o'  && <FinvasiaFO buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} />}
+                        {this.state.active === 'mis' && <MIS bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} />}
+                        {this.state.active === 'cnc' && <CNC bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} />}
+                        {this.state.active === 'o'  && <FO bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} />}
+                        {this.state.active === 'o'  && <FinvasiaFO bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} />}
                     </div>
                 </div>
             </div>
