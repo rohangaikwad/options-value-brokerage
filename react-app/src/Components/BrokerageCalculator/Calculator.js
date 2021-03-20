@@ -59,7 +59,7 @@ export default class Calculator extends React.Component {
                 </div>
 
                 <ul className="nav nav-tabs mt-4">
-                    <li className="nav-item" onClick={() => this.setActiveCalculator('mis')}>
+                    {/* <li className="nav-item" onClick={() => this.setActiveCalculator('mis')}>
                         <div className={`nav-link ${this.state.active === "mis" ? 'active':''}`}>MIS</div>
                     </li>
                     <li className="nav-item" onClick={() => this.setActiveCalculator('cnc')}>
@@ -67,9 +67,15 @@ export default class Calculator extends React.Component {
                     </li>
                     <li className="nav-item" onClick={() => this.setActiveCalculator('f')}>
                         <div className={`nav-link ${this.state.active === "f" ? 'active':''}`}>F</div>
-                    </li>
+                    </li> */}
                     <li className="nav-item" onClick={() => this.setActiveCalculator('o')}>
                         <div className={`nav-link ${this.state.active === "o" ? 'active':''}`}>O</div>
+                    </li>
+                    <li className="nav-item" onClick={() => this.setActiveCalculator('fino')}>
+                        <div className={`nav-link ${this.state.active === "fino" ? 'active':''}`}>FinO</div>
+                    </li>
+                    <li className="nav-item" onClick={() => this.setActiveCalculator('zero')}>
+                        <div className={`nav-link ${this.state.active === "zero" ? 'active':''}`}>ZerO</div>
                     </li>
                 </ul>
 
@@ -96,6 +102,8 @@ export default class Calculator extends React.Component {
                         {this.state.active === 'cnc' && <CNC bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} />}
                         {this.state.active === 'o'  && <FO bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} setSell={this.setCalculatedSell} />}
                         {this.state.active === 'o'  && <FinvasiaFO bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} setSell={this.setCalculatedSell}/>}
+                        {this.state.active === 'fino'  && <FinvasiaFO bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} setSell={this.setCalculatedSell}/>}
+                        {this.state.active === 'zero'  && <FO bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} setSell={this.setCalculatedSell} />}
                     </div>
                 </div>
             </div>
