@@ -13,6 +13,14 @@ body { font-family: calibri; }
             &:nth-child(2) { text-align: right; }
             &.profit { color: darkslategrey; }
             &.loss { color: red; }
+
+            .sellPrice {
+                cursor: pointer;
+                &:hover { text-decoration: underline; }
+                & + .sellPrice {
+                    &:before { padding-left: 10px; margin-right: 10px; content: "|"; }
+                }
+            }
         }
     }
 }

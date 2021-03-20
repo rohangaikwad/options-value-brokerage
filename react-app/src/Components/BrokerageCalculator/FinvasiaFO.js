@@ -23,6 +23,11 @@ export default class FinvasiaFO extends React.Component {
 
     componentDidMount() {
         this.calculate();
+        [...document.getElementsByClassName('sellPriceFin')].forEach(elem => {
+            elem.addEventListener('click', (e) => {
+                this.props.setSell(e.target.innerText);
+            })
+        })
     }
 
     componentDidUpdate(prevProps) {
@@ -106,10 +111,10 @@ export default class FinvasiaFO extends React.Component {
         //let target = this.props.bal * -0.01;
         //let magicNumber = ((target + (1.0006559 * this.props.buy * this.props.qty)) / (0.9988741 * this.props.qty)) - this.props.buy;
         this.setState({
-            magicNumber: (target) => {
+            magicNumber: (target, isSimple) => {
                 let simple = this.props.buy + (this.props.buy/100 * target * 2);
                 let adv = ((this.props.bal * target/100) + (1.0006559 * this.props.buy * this.props.qty)) / (0.9988741 * this.props.qty);
-                return `${simple.toFixed(2)} | ${adv.toFixed(2)}`;
+                return isSimple ? simple.toFixed(2) : adv.toFixed(2);
             }
         })
     }
@@ -117,27 +122,43 @@ export default class FinvasiaFO extends React.Component {
     render() {
         return (
             <>
-                <table className="table table-bordered table-success table-striped">
+                <table className="table table-bordered table-success table-striped finvasia">
                     <tbody>
                         <tr>
                             <th>Stoploss (-1%)</th>
-                            <td className="text-danger">{this.state.magicNumber(-1)}</td>
+                            <td className="text-danger">
+                                <span className="sellPrice sellPriceFin">{this.state.magicNumber(-1, true)}</span>
+                                <span className="sellPrice sellPriceFin">{this.state.magicNumber(-1, false)}</span>
+                            </td>
                         </tr>
                         <tr>
                             <th>Breakeven</th>
-                            <td className="text-decoration-underline text-muted">{(this.state.breakeven + this.props.buy).toFixed(2)}</td>
+                            <td className="text-decoration-underline text-muted">
+                                <span className="sellPrice sellPriceFin">{(this.state.breakeven + this.props.buy).toFixed(2)}</span>
+                            </td>
                         </tr>
                         <tr>
                             <th>Profit (1:1)</th>
-                            <td><strong>{this.state.magicNumber(1)}</strong></td>
+                            <td>
+                                <strong>
+                                    <span className="sellPrice sellPriceFin">{this.state.magicNumber(1, true)}</span>
+                                    <span className="sellPrice sellPriceFin">{this.state.magicNumber(1, false)}</span>
+                                </strong>
+                            </td>
                         </tr>
                         <tr>
                             <th>Profit (1:2)</th>
-                            <td>{this.state.magicNumber(2)}</td>
+                            <td>
+                                <span className="sellPrice sellPriceFin">{this.state.magicNumber(2, true)}</span>
+                                <span className="sellPrice sellPriceFin">{this.state.magicNumber(2, false)}</span>
+                            </td>
                         </tr>
                         <tr>
                             <th>Profit (1:3)</th>
-                            <td>{this.state.magicNumber(3)}</td>
+                            <td>
+                                <span className="sellPrice sellPriceFin">{this.state.magicNumber(3, true)}</span>
+                                <span className="sellPrice sellPriceFin">{this.state.magicNumber(3, false)}</span>
+                            </td>
                         </tr>
                         <tr className="hide">
                             <th>Turnover</th>

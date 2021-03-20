@@ -13,6 +13,7 @@ export default class Calculator extends React.Component {
             buy: 25, sell: 25.25, qty: 225, active: "o", bal: 10000
         }
     }
+
     setActiveCalculator = (name) => {
         this.setState({active: name})
     }
@@ -38,6 +39,11 @@ export default class Calculator extends React.Component {
 
     toggleCharges = () => {
         document.body.classList.toggle('show-charges');
+    }
+
+    setCalculatedSell = (num) => {
+        this.setState({ sell: +num });
+        document.getElementById('sel').value = num;
     }
 
     render () {
@@ -88,8 +94,8 @@ export default class Calculator extends React.Component {
                     <div className="calculations mt-3">
                         {this.state.active === 'mis' && <MIS bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} />}
                         {this.state.active === 'cnc' && <CNC bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} />}
-                        {this.state.active === 'o'  && <FO bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} />}
-                        {this.state.active === 'o'  && <FinvasiaFO bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} />}
+                        {this.state.active === 'o'  && <FO bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} setSell={this.setCalculatedSell} />}
+                        {this.state.active === 'o'  && <FinvasiaFO bal={this.state.bal} buy={this.state.buy} sell={this.state.sell} qty={this.state.qty} setSell={this.setCalculatedSell}/>}
                     </div>
                 </div>
             </div>
