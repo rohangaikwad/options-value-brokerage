@@ -50,9 +50,6 @@ export default class Calculator extends React.Component {
         return (
             <div className="container">
 
-                <div className="balance">
-                    <input type="number" defaultValue={this.state.bal}  onChange={this.setBalance} onKeyUp={this.setBalance}/>
-                </div>
 
                 <div className="charges-toggle">
                     <div className="btn-charges" onClick={() => this.toggleCharges()}>Charges</div>
@@ -81,6 +78,11 @@ export default class Calculator extends React.Component {
 
                 <div className="tab-panel mt-3">
                     <div className="inputs row">
+
+                        <div className="col-12 balance mb-3">
+                            <label className="form-label">Balance</label>
+                            <input type="number" defaultValue={this.state.bal} onChange={this.setBalance} onKeyUp={this.setBalance} className="form-control"/>
+                        </div>
 
                         <div className="col">
                             <label className="form-label">Buy</label>
